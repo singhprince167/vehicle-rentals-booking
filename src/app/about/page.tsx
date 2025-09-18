@@ -16,7 +16,7 @@ export default function AboutPage() {
             <li>• 24x7 support for breakdowns and assistance</li>
           </ul>
         </div>
-        <img className="w-full h-64 md:h-80 object-cover rounded" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop" alt="About our rental services" />
+        <img className="w-full h-64 md:h-80 object-cover rounded" src="https://images.unsplash.com/photo-1742294739111-88d9b45a4f12?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About our rental services" />
       </section>
 
       <section className="mt-12">

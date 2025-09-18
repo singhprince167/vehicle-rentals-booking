@@ -6,9 +6,9 @@ export default function ContactPage() {
       <h1 className="text-3xl font-bold tracking-tight">Contact Us.</h1>
       <div className="mt-6 grid gap-8 md:grid-cols-2">
         <div className="space-y-3 text-sm">
-          <p>Phone: <a className="underline" href="tel:+917705939987">+91 77059 39987</a></p>
-          <p>WhatsApp: <a className="underline" href="https://wa.me/917705939987" target="_blank">Chat on WhatsApp</a></p>
-          <p>Email: <a className="underline" href="mailto:Princekumarsingh167@gmail.com">Princekumarsingh167@gmail.com</a></p>
+          <p>Phone: <a className="underline" href="tel:+919792949822">+91 97929 49822</a></p>
+          <p>WhatsApp: <a className="underline" href="https://wa.me/919792949822" target="_blank">Chat on WhatsApp</a></p>
+          <p>Email: <a className="underline" href="mailto:shikshartinfo@gmail.com">shikshartinfo@gmail.com</a></p>
           <div className="pt-2">
             <p className="font-medium">Service Area</p>
             <p className="text-muted-foreground">Kathgodam, Haldwani, Bhimtal, Nainital Road & nearby.</p>
@@ -16,8 +16,8 @@ export default function ContactPage() {
           <div className="pt-2">
             <p className="font-medium">Social</p>
             <div className="flex gap-3">
-              <a className="underline" href="https://www.facebook.com/ThePrinceSingh167/">Facebook</a>
-              <a className="underline" href="https://www.instagram.com/prince_singh167/">Instagram</a>
+              <a className="underline" href="https://www.linkedin.com/company/sahind-technologies/">Facebook</a>
+              <a className="underline" href="https://www.instagram.com/shikshart_com/?igsh=MTgydHV3eW54N242aw%3D%3D#">Instagram</a>
             </div>
           </div>
         </div>
