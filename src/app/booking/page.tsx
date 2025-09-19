@@ -17,7 +17,7 @@ const VEHICLES = [
   { label: "Car", value: "car" },
 ];
 
-const WHATSAPP_NUMBER = "9792949822"; // Change to your business number
+const WHATSAPP_NUMBER = "+919792949822"; // Change to your business number
 const ADMIN_EMAIL = "shikshartinfo@gmail.com"; // Change to your email
 
 export default function BookingPage() {
