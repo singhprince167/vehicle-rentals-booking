@@ -1,28 +1,27 @@
 "use client"
 
 import * as React from "react"
-import * as RechartsPrimitive from "recharts"
+import { ResponsiveContainer, Tooltip } from "recharts"
 
 import { cn } from "@/lib/utils"
 
-// Recharts se required imports
-import {
-  TooltipProps,
-  ResponsiveContainer,
-} from "recharts"
-
 // Custom Tooltip Props
-interface CustomTooltipProps extends TooltipProps<any, any> {
-  payload?: any[];
+interface CustomTooltipProps {
+  active?: boolean
+  payload?: any[]
+  className?: string
+  indicator?: "dot" | "line" | "square"
+  hideLabel?: boolean
 }
 
+// Chart Context
 const ChartContext = React.createContext<{
   config: any
   id: string
 } | null>(null)
 
 export function Chart({
-  id,
+  id: propId,
   config,
   children,
   className,
@@ -32,9 +31,13 @@ export function Chart({
   children: React.ReactNode
   className?: string
 }) {
+  // ✅ Always call hook unconditionally
+  const generatedId = React.useId()
+  const chartId = propId ?? generatedId
+
   return (
     <div className={cn("h-[400px] w-full", className)}>
-      <ChartContext.Provider value={{ config, id: id || React.useId() }}>
+      <ChartContext.Provider value={{ config, id: chartId }}>
         <ResponsiveContainer>
           <>
             {React.Children.map(children, (child) => {
@@ -50,18 +53,14 @@ export function Chart({
   )
 }
 
-// ✅ Tooltip Content Fixed
+// ✅ Tooltip Component
 export function ChartTooltipContent({
   active,
   payload,
   className,
   indicator = "dot",
   hideLabel = false,
-}: CustomTooltipProps & {
-  className?: string
-  indicator?: "dot" | "line" | "square"
-  hideLabel?: boolean
-}) {
+}: CustomTooltipProps) {
   if (!active || !payload || payload.length === 0) return null
 
   return (
