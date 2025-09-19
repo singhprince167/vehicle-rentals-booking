@@ -103,7 +103,7 @@ export default function SiteHeader() {
 
               {/* ✅ WhatsApp Booking button for Mobile */}
               <a
-                href="https://wa.me/+919792949822?text=Hello%20Prince%2C%20I%20want%20to%20book%20a%20Bike%2C%20Scooty%20and%20Car"
+                href="https://wa.me/+919792949822?text=Hello%20SahindTech%2C%20I%20want%20to%20book%20a%20Bike%2C%20Scooty%20and%20Car"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2"
