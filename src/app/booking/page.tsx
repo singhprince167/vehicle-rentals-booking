@@ -17,8 +17,8 @@ const VEHICLES = [
   { label: "Car", value: "car" },
 ];
 
-const WHATSAPP_NUMBER = "7705939987"; // Change to your business number
-const ADMIN_EMAIL = "Princekumarsingh167@gmail.com"; // Change to your email
+const WHATSAPP_NUMBER = "9792949822"; // Change to your business number
+const ADMIN_EMAIL = "shikshartinfo@gmail.com"; // Change to your email
 
 export default function BookingPage() {
   const [form, setForm] = useState({
